@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  
+  <style>
+    .playingTable{
+      background-image: url(https://images2.alphacoders.com/105/105962.jpg);
+      background-position: center;
+      /* background: rgb(156, 2, 2); */
+      height: 100vh;
+      margin: 0%;
+      padding: 0%;
+      background-size: auto;
+    }
+
+    .cardTable{
+      background-color: rgb(255, 37, 37);
+      height: 20vh;
+      margin: 20px;
+      padding: 20px;
+      border: black solid 5px;
+      border-radius: 10%;
+      display: flex;
+      flex-direction: row;
+      
+    }
+    .handdisplay{
+      display: flex;
+      height: auto;
+      margin: 0px 15px;
+      
+    }
+
+    .score-table{
+      color: white;
+      
+     
+    }
+
+    .dealer{
+      display: flex;
+      margin-bottom: 25%;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="message-box" id="messages"></div>
+  <div class="table playingTable" >
+    <div class="dealer cardTable">
+      <label class="player-name ">Dealer: 
+        <span id="dealer-points" class="points"></span>
+      </label>
+      <div id="dealer-hand" class="handdisplay">
+        <!-- <img src="/blackjack-exercise/images/3_of_diamonds.png" alt=""> -->
+      </div>
+    </div>
+    <div class="score-table ">
+        
+    </div>
+    <div class="player cardTable">
+      <label class="player-name ">Player: 
+        <span id="player-points" class="points"></span>
+      </label>
+      <div id="player-hand" class="handdisplay">
+        <!-- <img  src="/blackjack-exercise/images/10_of_clubs.png" alt=""> -->
+      </div>
+    </div>
+    <div class="buttons ">
+      <button id="deal-button" type="button" >Deal</button>
+      <button id="hit-button" type="button">Hit</button>
+      <button id="stand-button" type="button">Stand</button>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
